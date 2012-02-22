@@ -120,7 +120,7 @@ void *udp_thread_recv(void *arg)
             udp_client_valid = 1;
             
             #ifdef UDP_DEBUG    
-            printf("udp.c: udp_thread_recv(): received message: port(%d) IP(%s)\n", ntohs(udp_client.sin_port), inet_ntoa(udp_client.sin_addr));
+            printf("udp.c: udp_thread_recv(): received message: port(%d) IP(%s)\n", ntohs(pc_addr.sin_port), inet_ntoa(pc_addr.sin_addr));
             printf("udp.c: udp_thread_recv(): message size %d\n", msg_in_size);
             #endif
             
